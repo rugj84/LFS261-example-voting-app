@@ -34,6 +34,7 @@ pipeline {
         }
         success{
             slackSend (channel: "#ci-cd", message: "Build Success: ${env.JOB_NAME} ${env.BUILD_NUMBER}")
+        }
 
     }
 }
